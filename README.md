@@ -15,7 +15,7 @@ The following is a breakdown of the various modules covered in the training, alo
 ### 2. **Automation**
 - **Shell Scripting:** Automation of repetitive tasks using Bash scripts
 - **Python Scripting:** Writing Python scripts for system automation
-- **[Ansible](./ansible):** Configuration management and automation tool
+- **[Ansible]():** Configuration management and automation tool
 - **HashiCorp Vault:** Secrets management, access control, and data encryption
 - **Terraform:** Infrastructure as Code (IaC) to manage cloud resources
 
