@@ -2,6 +2,7 @@
 
 This repository documents my learning journey through an extensive AWS & DevOps training program. The training covers a range of key technologies, tools, and methodologies to build a solid foundation in cloud computing, automation, containerization, monitoring, CI/CD, and security practices.
 
+> **Disclaimer:** This repository is a work in progress. I am actively updating and adding new content as I complete the different modules of my training. Some sections may not yet be fully completed.
 ## Training Roadmap Overview
 
 The following is a breakdown of the various modules covered in the training, along with the tools and technologies learned:
