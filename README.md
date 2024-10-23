@@ -61,3 +61,11 @@ You can follow my progress in each module of the training by browsing through th
 - Clone the repository to your local machine:
   ```bash
   git clone https://github.com/YOUR-USERNAME/training-roadmap.git
+
+## License
+
+This repository is licensed under the **MIT License**. See the [LICENSE] file for details.
+
+## Contributing
+
+If you find any mistakes in the notes or have any suggestions, feel free to create an issue or pull request. I will be happy to review and merge them. You can also create a PR to add your notes or resources to this repository.
