@@ -1,4 +1,4 @@
-# AWS & DevOps Training Roadmap
+# My AWS & DevOps Learning Roadmap
 
 This repository documents my learning journey through an extensive AWS & DevOps training program. The training covers a range of key technologies, tools, and methodologies to build a solid foundation in cloud computing, automation, containerization, monitoring, CI/CD, and security practices.
 
