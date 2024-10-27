@@ -28,9 +28,11 @@ Internal Commands: These are built-in commands that are part of the shell. These
 External Commands: These are commands that are not part of the shell. These commands are separate programs that are stored in the system. Example: ls, cat, grep, awk, sed, find.
 
 We can check whether a command is an internal command or an external command by using the type command.
+
 ```bash
 type cd
 type ls
 
 # Home Directory
 The home directory is the directory where the user is placed after logging into the system. It is represented by the ~ symbol. The home directory of the user is /home/username. It will be default directory when we open the terminal.
+
