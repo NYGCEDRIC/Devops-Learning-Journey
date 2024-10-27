@@ -6,6 +6,9 @@ Linux provides better Security, flexibility, stability, etc. It is used in serve
 # Installation options of Linux OS
 
 Bare Metal - Install Linux OS directly on the hardware.
+
 Virtualization- Install Linux OS on the virtual machine. There are various virtualization tools like VirtualBox, Hyper-V, etc.
+
 Cloud - Install Linux OS on the cloud. There are various cloud providers like AWS, Azure, GCP, etc.
+
 Container - Install Linux OS on the container. There are various containerization tools like Docker, Kubernetes, etc
