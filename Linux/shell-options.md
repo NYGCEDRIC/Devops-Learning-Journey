@@ -15,3 +15,12 @@ Korn Shell (ksh): It is a shell that was developed by David Korn at Bell Labs.
 Z Shell (zsh): It is a shell that is an extended version of the Bourne Shell (bash).
 
 Fish Shell (fish): It is a shell that is designed to be user-friendly and interactive.
+
+Changing the Shell
+
+We can change the shell by using the chsh command.
+
+```bash chsh -s /path/to/shell username
+
+The above will prompt for the password of the user and then change the shell to the specified shell.
+
