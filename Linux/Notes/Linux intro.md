@@ -52,3 +52,13 @@ ls -ltr - It is used to list the files and directories in the long format with t
 more - Display the content of the file one page at a time with more options. We can use the spacebar to move to the next page and the enter key to move to the next line.
 
 less - Display the content of the file one page at a time with less options. We can use the spacebar to move to the next page and the enter key to move to the next line. It is just like the more command but with more useful with Big files.
+
+## Helpful Commands
+
+whatis - It is used to display a one-line manual page
+
+man - It is used to display the manual page of the command
+
+history - It is used to display the history of commands
+
+apropos - It is used to search the manual page names and descriptions
