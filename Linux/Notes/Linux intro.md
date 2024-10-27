@@ -14,3 +14,41 @@ Cloud - Install Linux OS on the cloud. There are various cloud providers like AW
 Container - Install Linux OS on the container. There are various containerization tools like Docker, Kubernetes, etc
 
 ## Basic Linux Commands
+
+pwd - Print the current working directory.
+
+ls - List the files and directories in the current working directory. 
+
+cd - Change the directory.
+
+mkdir - Create a directory.
+
+touch - Create a file.
+
+cat - Print the content of the file.
+
+pushd - It is used to push the directory to the stack.
+
+popd - It is used to pop the directory from the stack.
+
+mv - Move the file or directory.
+
+cp - Copy the file or directory.
+
+rm - Remove the file.
+
+rmdir - It is used to remove the directory.
+
+cp -r - Copy the directory recursively.
+
+ls -l - List the files and directories in the long format.
+
+ls -a - List the files and directories including hidden files. 
+
+ls -lt - It is used to list the files and directories in the long format with the latest file first.
+
+ls -ltr - It is used to list the files and directories in the long format with the latest file last.
+
+more - Display the content of the file one page at a time with more options. We can use the spacebar to move to the next page and the enter key to move to the next line.
+
+less - Display the content of the file one page at a time with less options. We can use the spacebar to move to the next page and the enter key to move to the next line. It is just like the more command but with more useful with Big files.
