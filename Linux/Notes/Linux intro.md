@@ -12,3 +12,5 @@ Virtualization- Install Linux OS on the virtual machine. There are various virtu
 Cloud - Install Linux OS on the cloud. There are various cloud providers like AWS, Azure, GCP, etc.
 
 Container - Install Linux OS on the container. There are various containerization tools like Docker, Kubernetes, etc
+
+## Basic Linux Commands
