@@ -26,13 +26,13 @@ ConfigMap and Secret: Mechanisms to inject configuration data into your applicat
 
 # 2. Basic Kubernetes Operations
 
-Setting Up a Kubernetes Cluster
+**Setting Up a Kubernetes Cluster**
 
 Minikube: Set up a single-node Kubernetes cluster for testing.
 ````bash
 minikube start
 ````
-Working with kubectl
+**Working with kubectl**
 
 Get Cluster Information:
 ````bash
@@ -42,6 +42,91 @@ Get All Nodes in the Cluster:
 ````bash
 kubectl get nodes
 ````
+
+Managing Pods
+
+Creating a Pod
+````bash
+kubectl run mypod --image=nginx
+````
+Listing all Pods
+````bash
+kubectl get pods
+````
+Describing a Pod
+````bash
+kubectl describe pod mypod
+````
+Deleting a Pod
+````bash
+kubectl delete pod mypod
+````
+
+**Using Namespaces**
+
+Listing All Namespaces:
+````bash
+kubectl get namespaces
+````
+Create a Namespace:
+````bash
+kubectl create namespace mynamespace
+````
+Deleting a Namespace:
+````bash
+kubectl delete namespace mynamespace
+````
+
+## 3. Deployments and Scaling
+
+List Deployments
+````bash
+kubectl get deployments
+kubectl get deployments -n my-namespace
+````
+Lists all deployments in the default namespace or a specified namespace.
+
+Create Deployment
+````bash
+kubectl create deployment my-deployment --image=nginx
+````
+Creates a new deployment with the specified container image.
+
+View Deployment Status:
+````bash
+kubectl get deployments
+````
+Update a Deployment:
+````bash
+kubectl set image deployment/myapp nginx=nginx:1.16
+````
+Rollback a Deployment:
+````bash
+kubectl rollout undo deployment/myapp
+````
+Delete Deployment
+````bash
+kubectl delete deployment my-deployment
+````
+**Scaling Applications**
+
+Scale a Deployment:
+````bash
+kubectl scale deployment myapp --replicas=3
+````
+Auto-scaling with Horizontal Pod Autoscaler (HPA):
+````bash
+kubectl autoscale deployment myapp --min=1 --max=5 --cpu-percent=80
+````
+
+
+
+
+
+
+
+
+
 
 
 
