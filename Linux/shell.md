@@ -31,3 +31,6 @@ We can check whether a command is an internal command or an external command by 
 ```bash
 type cd
 type ls
+
+Home Directory
+The home directory is the directory where the user is placed after logging into the system. It is represented by the ~ symbol. The home directory of the user is /home/username. It will be default directory when we open the terminal.
