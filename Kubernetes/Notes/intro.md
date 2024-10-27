@@ -511,8 +511,10 @@ Deploy Federated Resources: Deploy resources that span across multiple clusters 
 **Community Resources**
 
 [Kubernetes Slack](https://communityinviter.com/apps/kubernetes/community)
-[Kubernetes GitHub Repository](https://github.com/kubernetes/kubernetes)[
-Kubernetes Blog](https://kubernetes.io/blog/)
+
+[Kubernetes GitHub Repository](https://github.com/kubernetes/kubernetes)
+
+[Kubernetes Blog](https://kubernetes.io/blog/)
 
 
 
