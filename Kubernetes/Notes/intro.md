@@ -100,6 +100,11 @@ Update a Deployment:
 ````bash
 kubectl set image deployment/myapp nginx=nginx:1.16
 ````
+Rollout Status
+````bash
+kubectl rollout status deployment/my-deployment
+````
+
 Rollback a Deployment:
 ````bash
 kubectl rollout undo deployment/myapp
@@ -118,6 +123,134 @@ Auto-scaling with Horizontal Pod Autoscaler (HPA):
 ````bash
 kubectl autoscale deployment myapp --min=1 --max=5 --cpu-percent=80
 ````
+**Service Management**
+
+List Services
+````bash
+kubectl get services
+kubectl get services -n my-namespace
+````
+Lists all services in the default namespace or a specified namespace.
+
+Create Service
+````bash
+kubectl expose deployment my-deployment --type=LoadBalancer --name=my-service
+````
+Creates a new service to expose a deployment.
+
+Deleting a Service
+````bash
+kubectl delete service my-service
+````
+Deletes a specified service.
+
+
+## 🚀 Intermediate Commands
+
+**ConfigMap and Secret Management**
+
+List ConfigMaps
+````bash 
+kubectl get configmaps
+kubectl get configmaps -n my-namespace
+````
+Lists all ConfigMaps in the default namespace or a specified namespace.
+
+Create ConfigMap
+````bash
+kubectl create configmap my-config --from-literal=key1=value1 --from-literal=key2=value2
+````
+Creates a new ConfigMap from literal values.
+
+List Secrets
+````bash
+kubectl get secrets
+kubectl get secrets -n my-namespace
+````
+Lists all secrets in the default namespace or a specified namespace.
+
+Create Secret
+````bash
+kubectl create secret generic my-secret --from-literal=username=admin --from-literal=password=secret
+````
+Creates a new secret from literal values.
+
+**Monitoring and Logging**
+
+View Pod Logs
+````bash
+kubectl logs my-pod
+````
+Displays the logs of a specified pod.
+
+View Previous Pod Logs
+
+````bash
+kubectl logs my-pod --previous
+````
+Displays the logs of a previous instance of a specified pod.
+
+Get Events
+````bash
+kubectl get events
+kubectl get events -n my-namespace
+````
+Lists all events in the default namespace or a specified namespace.
+
+**Resource Management**
+
+Describe Node
+````bash
+kubectl describe node my-node
+````
+Displays detailed information about a specified node.
+
+Label Nodes
+````bash
+kubectl label nodes my-node disktype=ssd
+````
+Adds a label to a node.
+
+Annotate Resources
+````bash
+kubectl annotate pod my-pod description="my example pod"
+````
+Adds an annotation to a resource.
+
+**Network Policies**
+
+Create Network Policy
+````bash
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-nginx
+  namespace: my-namespace
+spec:
+  podSelector:
+    matchLabels:
+      app: nginx
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+````
+Apply the network policy:
+
+````bash
+kubectl apply -f network-policy.yaml
+````
+
+## 🧠 Advanced Commands
+
+
+
+
+
+
 
 
 
