@@ -62,3 +62,4 @@ man - It is used to display the manual page of the command
 history - It is used to display the history of commands
 
 apropos - It is used to search the manual page names and descriptions
+
