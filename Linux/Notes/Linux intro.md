@@ -1,4 +1,5 @@
-What is Linux OS?
+# What is Linux OS?
+
 Linux is an open-source operating system. It is based on the Linux kernel. It was developed by Linus Torvalds in 1991. It is a Unix-like operating system. It is free to use. It is used in various devices like servers, desktops, mobile phones, etc.
 Linux provides better Security, flexibility, stability, etc. It is used in servers, desktops, mobiles, etc. It Provides better Customization Support over Other Operating Systems. In Linux, We have command line interface and graphical user interface for interaction. There are various Linux Distribution like RedHat, Ubuntu, CentOS, etc. Each Linux Distribution has its own features and functionalities.
 Installation options of Linux OS
