@@ -83,10 +83,15 @@ We can customize the Bash prompt by setting the PS1 variable. Some of the common
 Most Common Escape Sequences:
 
 \u - username of the current user
+
 \h - hostname of the machine
+
 \w - current working directory
+
 \W - basename of the current working directory
+
 \d - date in "Weekday Month Date" format
+
 \t - current time in 24-hour HH:MM:SS format
 
 
