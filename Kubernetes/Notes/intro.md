@@ -246,6 +246,135 @@ kubectl apply -f network-policy.yaml
 
 ## 🧠 Advanced Commands
 
+**Advanced Pod Management**
+
+Debug Pod
+````bash
+kubectl debug my-pod --image=busybox --target=my-container
+````
+Debugs a running pod by creating a new debugging container in the pod.
+
+Port Forwarding
+````bash
+kubectl port-forward my-pod 8080:80
+````
+Forwards a local port to a port on a pod.
+
+**Advanced Node Management**
+
+Cordon Node
+````bash
+kubectl cordon my-node
+````
+Marks a node as unschedulable.
+
+Drain Node
+````bash
+kubectl drain my-node --ignore-daemonsets
+````
+Safely evicts all pods from a node before maintenance.
+
+Uncordon Node
+````bash
+kubectl uncordon my-node
+````
+Marks a node as schedulable.
+
+**Resource Quotas and Limits**
+
+Create Resource Quota
+````bash
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-resources
+  namespace: my-namespace
+spec:
+  hard:
+    pods: "10"
+    requests.cpu: "4"
+    requests.memory: 16Gi
+    limits.cpu: "10"
+    limits.memory: 32Gi
+````
+Apply the resource quota:
+````bash
+kubectl apply -f resource-quota.yaml
+````
+
+**Custom Resources and CRDs**
+
+Create Custom Resource Definition
+````bash
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: crontabs.stable.example.com
+spec:
+  group: stable.example.com
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                cronSpec:
+                  type: string
+                image:
+                  type: string
+                replicas:
+                  type: integer
+  scope: Namespaced
+  names:
+    plural: crontabs
+    singular: crontab
+    kind: CronTab
+    shortNames:
+    - ct
+````
+Apply the CRD:
+````bash
+kubectl apply -f crd.yaml
+````
+Create Custom Resource
+````bash
+apiVersion: stable.example.com/v1
+kind: CronTab
+metadata:
+  name: my-new-cron-object
+  namespace: my-namespace
+spec:
+  cronSpec: "* * * * */5"
+  image: my-cron-image
+  replicas: 3
+````
+Apply the custom resource:
+````bash
+kubectl apply -f custom-resource.yaml
+````
+
+## Helm for Kubernetes Package Management
+
+Installing Helm
+
+Follow the installation instructions for Helm from the [official Helm website](https://helm.sh/docs/intro/install/).
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
